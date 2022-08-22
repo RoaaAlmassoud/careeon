@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.main-container {
+  width: 100%;
+  height: calc(100vh - 20px);
+}
+
+.main-container .header-section {
+  height: 64px;
+  display: flex;
+  padding: 0px 12px;
+  border-bottom: 1px solid #EFEFEF;
+  align-items: center;
+}
+
+.main-container .header-section img {
+  width: 196px;
+  padding: 12px 20px 12px 0;
+}
+
+.main-container .header-section p {
+  text-align: left;
+  font: normal normal 300 24px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #AEAEAE;
+  opacity: 1;
+}
+
+.main-container .children {
+  margin-top: 30px;
+}
+
+.main-container .ui.form .field>.ui.label {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Noto Sans JP';
+  color: #111111;
+  padding: 0 0 10px 0;
+  background: transparent;
+  width: 100%;
+}
+
+.main-container .ui.form .field .ui.dropdown,
+.main-container .ui.form .field .ui.dropdown input,
+.main-container .ui.form .field .ui.input input {
+  font-size: 14px;
+  padding: 14px 10px;
+  border: 1px solid #D2D2D2;
+  border-radius: 4px;
+  background: #FAFAFA;
+}
+
+.main-container .ui.form .field .ui.input input {
+  padding: 12.5px 10px;
+}
+
+.main-container .ui.form .field .ui.input input:focus,
+.main-container .ui.form .field .ui.dropdown:hover,
+.main-container .ui.form .field .ui.dropdown:focus-within {
+  border-color: #4FA53A;
+}
+
+.main-container .ui.form .field {
+  margin-bottom: 20px;
+}
+
+.main-container .ui.form .field .ui.selection.dropdown>.dropdown.icon {
+  padding: 14px 20px;
+}
+
+.main-container .ui.form .form-actions .ui.button {
+  display: block;
+}
+
+.main-container .ui.form .form-actions {
+  margin-top: 30px;
+}
+
+.main-container .ui.form .form-actions .ui.button {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Noto Sans JP;
+  padding: 10px;
+  width: 35%;
+  margin: auto;
+}
+
+.main-container .ui.form .form-actions .ui.button.secondary,
+.ui.button.secondary  {
+  border: 1px solid #AAAAAA;
+  background-color: transparent !important;
+  color: #AAAAAA !important;
+}
+
+.main-container .ui.form .form-actions .ui.button.underline {
+  text-decoration: underline;
+  letter-spacing: 0px;
+  color: #111111;
+  background: transparent;
+  margin-top: 30px;
+}
+
+.ui.button.primary {
+  background-color: #4FA53A !important;
+  color: #EFEFEF !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,394 @@
+.registration-tabs .tabs-section .tabs .ui.pointing.secondary.menu {
+    justify-content: center;
+    border-bottom: none;
+}
+
+.registration-tabs .tabs-section .tabs .ui.pointing.secondary.menu .item .tab-header {
+    width: 153px;
+    height: 53px;
+    border-radius: 27px;
+    color: #AEAEAE;
+    background: #EFEFEF;
+    font: normal normal normal 20px/30px Noto Sans JP;
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.registration-tabs .tabs-section .tabs .ui.pointing.secondary.menu .item .icon {
+    font-size: 22px;
+    color: #AEAEAE;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.registration-tabs .tabs-section .tabs .ui.pointing.secondary.menu .item:last-child,
+.registration-tabs .tabs-section .tabs .ui.pointing.secondary.menu .active.item:last-child {
+    width: fit-content !important;
+}
+
+.registration-tabs .tabs-section .tabs .ui.pointing.secondary.menu .active.item .tab-header {
+    color: #EFEFEF;
+    background: #4FA53A;
+    border-bottom: none;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab {
+    border: none;
+    padding-top: 28px;
+    margin: auto;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab p:first-child {
+    font: normal normal normal 20px/30px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #111111;
+    text-align: center;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab p:nth-child(2) {
+    font: normal normal normal 14px/21px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #111111;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form {
+    width: 40%;
+    margin: 30px auto auto auto;
+}
+
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.student.form_3,
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_2 {
+    width: 80%;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.student.form_3 .form-actions .ui.button,
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_2 .form-actions .ui.button {
+    width: 18%;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form .common-step {
+    width: 100%;
+    display: flex;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form .common-step .left-section,
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form .common-step .right-section {
+    width: 50%;
+    padding: 0px 30px;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form .common-step .right-section .field:first-child textarea {
+    height: 130px;
+    background: #FAFAFA;
+    border: none;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form .common-step .right-section .field:last-child textarea {
+    height: 80px;
+    background: #FAFAFA;
+    border: none;
+    color: #4FA53A;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form .common-step .left-section .profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form .common-step .left-section #profile_picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form .common-step .left-section .wrapper-section .wrapper {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form .common-step .left-section .wrapper-section .wrapper input {
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form .common-step .left-section .wrapper-section p {
+    width: max-content;
+    cursor: pointer;
+    margin-bottom: 0;
+    border: 1px solid #AAAAAA;
+    font: normal normal normal 14px/21px Noto Sans JP;
+    color: #AAAAAA;
+    padding: 6.5px 10px;
+    border-radius: 4px;
+    margin-left: 42px;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_3 {
+    width: 60%;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_3 .questios-section {
+    display: flex;
+    width: 100%;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_3 .questios-section .fields {
+    width: 50%;
+    display: inline-block;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_3 .questios-section .fields .field {
+    width: 90%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_3 .questios-section .fields .field .ui.label span {
+    position: absolute;
+    right: 10px;
+    font: normal normal normal 10px/15px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #AEAEAE;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_3 .form-actions .ui.button {
+    width: 20%;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 {
+    width: 70%;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .terms-section {
+    height: 287px;
+    width: 77.5%;
+    margin: auto;
+    border: 1px solid #E1E1E1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .terms-section .header-text {
+    font: normal normal normal 20px/30px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #111111;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .terms-section p {
+    text-align: center;
+    font: normal normal normal 14px/21px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #111111;
+    margin-bottom: 0;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .field {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.student-login .right-side .ui.form .field.check{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .field .ui.checkbox label:before,
+.student-login .right-side .ui.form .field .ui.checkbox label:before {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #111111;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .field .ui.checkbox label::after,
+.student-login .right-side .ui.form .field .ui.checkbox label::after {
+    width: 20px;
+    height: 20px;
+    color: #4FA53A;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .field label,
+.student-login .right-side .ui.form .field label {
+    color: #111111;
+    text-decoration: underline;
+    font: normal normal bold 14px/21px Noto Sans JP;
+    letter-spacing: 0px;
+}
+
+.registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .field label span,
+.student-login .right-side .ui.form .field label span {
+    color: #0000FF;
+    margin-left: 10px;
+}
+
+.terms-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.terms-section::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    border: 1px solid #E1E1E1;
+}
+
+.terms-section::-webkit-scrollbar-track-piece {
+    background: #FAFAFA;
+}
+
+.flex-section {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.flex-section .ui.input {
+    width: 90%;
+}
+
+.flex-section .eye.icon,
+.flex-section .eye.slash.outline.icon {
+    color: grey !important;
+    position: absolute;
+    right: 10px;
+    margin-top: 14px;
+    width: 20px;
+    height: 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.flex-section i.icon.eye:before {
+    content: "\f06e";
+}
+
+.flex-section i.icon.eye.slash.outline:before {
+    content: "\f070";
+}
+
+.adviser-login {
+    padding: 0px 20px;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 130px);
+}
+
+.left-side,
+.right-side {
+    width: 50%;
+}
+
+.adviser-login .left-side {
+    padding-right: 20px;
+    border-right: 1px solid #E1E1E1;
+}
+
+.adviser-login .right-side {
+    padding-left: 20px;
+}
+
+.adviser-login .left-side .header-text,
+.adviser-login .right-side .header-text {
+    text-align: left;
+    font: normal normal normal 20px/30px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #111111;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.adviser-login .left-side .ui.form {
+    width: 60%;
+}
+
+.left-side .ui.form .form-actions,
+.right-side .ui.form .form-actions {
+    text-align: left;
+    width: max-content;
+}
+
+.left-side .ui.form .form-actions .ui.button.underline,
+.right-side .ui.form .form-actions .ui.button.underline {
+    margin-top: 40px !important;
+    width: 100% !important;
+    color: #0000FF !important;
+    font-weight: 700;
+}
+
+.left-side .ui.form .form-actions .ui.button,
+.right-side .ui.form .form-actions .ui.button {
+    width: 176px !important;
+    margin: inherit !important;
+}
+
+.adviser-login .right-side p {
+    text-align: left;
+    font: normal normal normal 14px/21px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #111111;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.right-side .ui.button,
+.left-side .ui.button {
+    width: 176px;
+}
+
+.student-login {
+    padding: 0px;
+    display: flex;
+    width: 100%;
+}
+
+.student-login .left-side {
+    margin-top: -30px;
+}
+
+.student-login .left-side img {
+    width: 100%;
+    height: calc(100vh - 70px);
+    object-fit: cover;
+    border-bottom-right-radius: 10px;
+}
+
+.student-login .right-side {
+    padding: 0px 20px;
+}
+
+.student-login .right-side h1.header-text {
+    font: normal normal bold 40px/60px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #111111;
+    opacity: 1;
+    margin-bottom: 40px;
+}
+
+.student-login .right-side .ui.form .field:nth-child(2){
+    padding-bottom: 40px;
+    border-bottom: 1px solid #AAAAAA;
+    margin-bottom: 0;
+}
+
+.student-login .right-side .ui.form .fields-section{
+    width: 60%;
+    padding-top: 40px;
+    
+}
