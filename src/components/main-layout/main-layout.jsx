@@ -72,12 +72,29 @@ function pageName() {
         case '/adviser-login':
             pageTitle = 'ログイン'
             break;
+        case '/adviser-forgot-password':
+        case '/student-forgot-password':
+        case '/forgot-password':
+            pageTitle = 'パスワードをお忘れの方'
+            break;
+        case '/adviser-page':
+            pageTitle = 'ライフチャット'
+            break;
+        case '/my-page':
+            pageTitle = 'マイページ'
+            break;
+        case '/update-account':
+            pageTitle = 'プロフィール編集'
+            break;
+        case '/home':
+        case '/student-page':
+            pageTitle = 'ホーム'
+            break;
     }
     return pageTitle;
 }
 
 function MainLayout(Component) {
-    console.log('Component:  ', Component)
     let location = useLocation();
     let navigate = useNavigate();
     let params = useParams();

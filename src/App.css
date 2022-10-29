@@ -1,3 +1,44 @@
+@font-face {
+  font-family: Noto-Black;
+  src: url('../public/font/NotoSansJP-Black.otf')
+}
+
+@font-face {
+  font-family: Noto-Bold;
+  src: url('../public/font/NotoSansJP-Bold.otf')
+}
+
+@font-face {
+  font-family: Noto-Medium;
+  src: url('../public/font/NotoSansJP-Medium.otf')
+}
+
+@font-face {
+  font-family: Noto-Regular;
+  src: url('../public/font/NotoSansJP-Regular.otf')
+}
+
+@font-face {
+  font-family: Noto-Thin;
+  src: url('../public/font/NotoSansJP-Thin.otf')
+}
+
+/* .black {
+  font-family: Noto-Black;
+}
+
+.bold {
+  font-family: Noto-Bold;
+}
+
+.medium {
+  font-family: Noto-Medium;
+}
+
+.regular {
+  font-family: Noto-regular;
+} */
+
 body {
   margin: 0;
 }
@@ -52,7 +93,10 @@ body {
 
 .main-container .header-section p {
   text-align: left;
-  font: normal normal 300 24px Noto Sans JP;
+  /* font: normal normal 300 24px Noto Sans JP; */
+  font-family: Noto-Thin;
+  font-size: 24px;
+  line-height: 36px;
   letter-spacing: 0px;
   color: #AEAEAE;
   opacity: 1;
@@ -64,26 +108,34 @@ body {
 
 .main-container .ui.form .field>.ui.label {
   font-size: 14px;
-  font-weight: 400;
-  font-family: 'Noto Sans JP';
+  /* font-weight: 400; */
+  font-family: Noto-Regular;
   color: #111111;
   padding: 0 0 10px 0;
   background: transparent;
   width: 100%;
 }
 
-.main-container .ui.form .field .ui.dropdown,
+.main-container .ui.form .field .ui.dropdown {
+  font: normal normal normal 14px/21px Noto-Regular;
+  padding: 10.5px 10px !important;
+  border: 1px solid #D2D2D2;
+  border-radius: 4px;
+  background: #FAFAFA;
+}
+
 .main-container .ui.form .field .ui.dropdown input,
 .main-container .ui.form .field .ui.input input {
-  font-size: 14px;
-  padding: 14px 10px;
+  /* font-size: 14px; */
+  font: normal normal normal 14px/21px Noto-Regular;
+  padding: 8.5px 10px !important;
   border: 1px solid #D2D2D2;
   border-radius: 4px;
   background: #FAFAFA;
 }
 
 .main-container .ui.form .field .ui.input input {
-  padding: 12.5px 10px;
+  padding: 10.5px 10px;
 }
 
 .main-container .ui.form .field .ui.input input:focus,
@@ -97,7 +149,9 @@ body {
 }
 
 .main-container .ui.form .field .ui.selection.dropdown>.dropdown.icon {
-  padding: 14px 20px;
+  /* padding: 14px 20px; */
+  content: url(/public/images/arrow.svg);
+  padding: 8px 10px;
 }
 
 .main-container .ui.form .form-actions .ui.button {
@@ -110,31 +164,43 @@ body {
 
 .main-container .ui.form .form-actions .ui.button {
   font-size: 14px;
-  font-weight: 500;
-  font-family: Noto Sans JP;
+  font-family: Noto-Regular;
   padding: 10px;
   width: 35%;
   margin: auto;
 }
 
 .main-container .ui.form .form-actions .ui.button.secondary,
-.ui.button.secondary  {
+.ui.button.secondary {
+  font-size: 14px;
+  font-family: Noto-Regular;
   border: 1px solid #AAAAAA;
   background-color: transparent !important;
   color: #AAAAAA !important;
 }
 
-.main-container .ui.form .form-actions .ui.button.underline {
+.main-container .ui.form .form-actions .ui.button.underline,
+.ui.button.underline {
   text-decoration: underline;
+  font: normal normal bold 14px/21px Noto-Bold;
   letter-spacing: 0px;
   color: #111111;
+  opacity: 0.9;
   background: transparent;
   margin-top: 30px;
+}
+
+.main-container .ui.form .form-actions .ui.button.underline:hover,
+.ui.button.underline:hover {
+  background: transparent;
+  opacity: 1;
 }
 
 .ui.button.primary {
   background-color: #4FA53A !important;
   color: #EFEFEF !important;
+  font: normal normal normal 14px/14px Noto-Regular;
+  border-radius: 6px;
 }
 
 @keyframes App-logo-spin {
@@ -145,4 +211,8 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.react-datepicker__input-container .datepicker-text{
+  padding: 10.5px !important;
 }

@@ -8,7 +8,6 @@ export default class Test extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log('props in test: ', props)
         this.welcomeModalRef = React.createRef();
         let userType = localStorage.getItem('user_type') ? localStorage.getItem('user_type') : 'provider'
         this.state = {

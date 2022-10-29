@@ -10,7 +10,6 @@ export default class RegistrationTabs extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log('prrops in regg: ', props)
         let userType = props.userType;
         this.state = {
             userType: userType,
@@ -81,7 +80,6 @@ export default class RegistrationTabs extends React.Component {
                     }),
                 })
             } else {
-                console.log('data: ', data)
                 this.setState({
                     termsChecked: data.checked
                 })
@@ -144,7 +142,6 @@ export default class RegistrationTabs extends React.Component {
 
     renderCommonStep = (formName, form) => {
         let { userType } = this.state;
-        console.log('form in common : ', form)
         return (
             <div className='common-step'>
                 <div className='left-section'>
@@ -295,7 +292,6 @@ export default class RegistrationTabs extends React.Component {
 
                     break;
                 case 2:
-                    console.log('showPassword: ', showPassword)
                     fields = <>
                         <Form.Field required
                         // error={!!nameError}

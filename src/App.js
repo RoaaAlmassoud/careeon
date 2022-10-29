@@ -1,15 +1,23 @@
 import React, { Component } from "react"
 import MainLayout from './components/main-layout/main-layout'
 import RegistrationTabs from "./components/authentication-components/src/registration-tabs"
-import AdviserLogin from "./components/authentication-components/src/adviser-login";
-import StudentLogin from "./components/authentication-components/src/student-login";
+import AdviserLogin from "./components/authentication-components/src/adviser-form/adviser-login";
+import StudentLogin from "./components/authentication-components/src/student-form/student-login";
+import StudentForgotPassword from "./components/authentication-components/src/student-form/student-forgot-password";
+import AdviserForgotPassword from "./components/authentication-components/src/adviser-form/adviser-forgot-password";
+import ForgotPassword from "./components/authentication-components/src/forgot-password";
+import PageLayout from "./components/my-page/page-layout";
+import UpdateAccount from "./components/my-page/adviser-page/update-account";
+import LessonStartModal from "./components/modals/lesson-start";
+import LessonEndModal from "./components/modals/lesson-end";
 //import Logout from './components/logout/logout'
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { useParams, Routes, Route, useNavigate } from 'react-router-dom';
 // import AppContext from './context/app-context';
 // import Helper from '../src/utils/helper'
 import { css } from 'glamor';
 import { toast, ToastContainer } from 'react-toastify';
 import { Icon, Label } from 'semantic-ui-react'
+
 
 
 function notify(error, message, duration = 5000) {
@@ -53,6 +61,7 @@ function errorFor(state, field, component, direction) {
 
 function App() {
   let navigate = useNavigate()
+  let params = useParams();
   return (
     <>
       {/* <AppContext.Provider value={this.state}> */}
@@ -70,6 +79,45 @@ function App() {
 
           <Route exact path="/adviser-login"
             element={<AdviserLogin notify={notify} navigate={navigate} userType='adviser' />} />
+
+          <Route exact path="/adviser-forgot-password"
+            element={<AdviserForgotPassword notify={notify} navigate={navigate} userType='adviser' />} />
+
+          <Route exact path="/student-forgot-password"
+            element={<StudentForgotPassword notify={notify} navigate={navigate} userType='adviser' />} />
+
+          <Route exact path="/forgot-password"
+            element={<ForgotPassword notify={notify} navigate={navigate} />} />
+
+          <Route exact path="/adviser-page"
+            element={<PageLayout notify={notify} navigate={navigate} userType='adviser' activeSection='lessons' />} />
+
+          <Route exact path="/lessons"
+            element={<PageLayout notify={notify} navigate={navigate} activeSection='lessons' />} />
+
+          <Route exact path="/lessons/:id"
+            element={<PageLayout notify={notify} navigate={navigate} userType='adviser' activeSection='details' />} />
+
+          <Route exact path="/my-page"
+            element={<PageLayout notify={notify} navigate={navigate} activeSection='my-page' />} />
+
+          <Route exact path="/update-account"
+            element={<UpdateAccount notify={notify} navigate={navigate} />} />
+
+          <Route exact path="/student-page"
+            element={<PageLayout notify={notify} navigate={navigate} userType='student' activeSection='home' />} />
+
+          <Route exact path="/home"
+            element={<PageLayout notify={notify} navigate={navigate} userType='student' activeSection='home' />} />
+
+          <Route exact path="/advisers/:id"
+            element={<PageLayout notify={notify} navigate={navigate} userType='student' activeSection='adviser-details' />} />
+
+          <Route exact path="/lesson-start"
+            element={<LessonStartModal notify={notify} navigate={navigate} />} />
+
+          <Route exact path="/lesson-end"
+            element={<LessonEndModal notify={notify} navigate={navigate} />} />
 
         </Routes>
 

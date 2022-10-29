@@ -1,0 +1,14 @@
+<svg id="PC_Lv1_img_btn_defo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_5847" data-name="長方形 5847" width="150" height="150" transform="translate(6 2)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_940" data-name="グループ 940" transform="translate(-6 -2)" clip-path="url(#clip-path)">
+    <path id="パス_1912" data-name="パス 1912" d="M81,16A65,65,0,1,1,16,81,65,65,0,0,1,81,16" fill="#aaa"/>
+    <circle id="楕円形_17" data-name="楕円形 17" cx="65" cy="65" r="65" transform="translate(16 16)" fill="none" stroke="#aaa" stroke-width="1"/>
+    <path id="パス_1913" data-name="パス 1913" d="M81,10A65,65,0,1,1,16,75,65,65,0,0,1,81,10" fill="#fff"/>
+    <circle id="楕円形_18" data-name="楕円形 18" cx="65" cy="65" r="65" transform="translate(16 10)" fill="none" stroke="#aaa" stroke-width="1"/>
+    <path id="パス_1914" data-name="パス 1914" d="M78.9,99c-2.3-2.3-11.2-11.763-15.692-17.179C58.545,76.15,54,69.982,54,61.639A12.355,12.355,0,0,1,66.065,49h.078c5.975,0,10.834,3.488,12.822,9.782h.062c2.057-6.6,7.1-9.782,12.829-9.782A12.358,12.358,0,0,1,104,61.57v.071c0,8.343-4.546,14.51-9.218,20.18C90.3,87.236,81.33,96.7,79.03,99Z" transform="translate(2 1)" fill="#4fa53a"/>
+  </g>
+</svg>

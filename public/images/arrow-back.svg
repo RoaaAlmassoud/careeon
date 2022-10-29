@@ -1,0 +1,10 @@
+<svg id="SP_Lv1_area_back" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_455" data-name="長方形 455" width="20" height="20" transform="translate(0 3)" fill="none" stroke="rgba(112,112,112,0)" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_467" data-name="グループ 467" transform="translate(0 -3)" clip-path="url(#clip-path)">
+    <path id="パス_894" data-name="パス 894" d="M12.353,21.319,3.785,13.265a1.178,1.178,0,0,1-.1-1.4.88.88,0,0,1,.1-.131l8.568-8.054a.625.625,0,0,1,1,.178,1.064,1.064,0,0,1-.141,1.262L5.364,12.5l7.85,7.379a1.064,1.064,0,0,1,.142,1.262.624.624,0,0,1-1,.178Z" transform="translate(1.5 0.5)" fill="#aeaeae" stroke="rgba(112,112,112,0)" stroke-width="1"/>
+  </g>
+</svg>

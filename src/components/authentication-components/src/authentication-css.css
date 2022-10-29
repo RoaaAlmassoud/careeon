@@ -9,7 +9,7 @@
     border-radius: 27px;
     color: #AEAEAE;
     background: #EFEFEF;
-    font: normal normal normal 20px/30px Noto Sans JP;
+    font: normal normal normal 20px/30px Noto-Regular;
     letter-spacing: 0px;
     display: flex;
     align-items: center;
@@ -42,14 +42,14 @@
 }
 
 .registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab p:first-child {
-    font: normal normal normal 20px/30px Noto Sans JP;
+    font: normal normal normal 20px/30px Noto-Regular;
     letter-spacing: 0px;
     color: #111111;
     text-align: center;
 }
 
 .registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab p:nth-child(2) {
-    font: normal normal normal 14px/21px Noto Sans JP;
+    font: normal normal normal 14px/21px Noto-Regular;
     letter-spacing: 0px;
     color: #111111;
     text-align: center;
@@ -133,7 +133,7 @@
     cursor: pointer;
     margin-bottom: 0;
     border: 1px solid #AAAAAA;
-    font: normal normal normal 14px/21px Noto Sans JP;
+    font: normal normal normal 14px/21px Noto-Regular;
     color: #AAAAAA;
     padding: 6.5px 10px;
     border-radius: 4px;
@@ -163,7 +163,7 @@
 .registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_3 .questios-section .fields .field .ui.label span {
     position: absolute;
     right: 10px;
-    font: normal normal normal 10px/15px Noto Sans JP;
+    font: normal normal normal 10px/15px Noto-Regular;
     letter-spacing: 0px;
     color: #AEAEAE;
 }
@@ -186,14 +186,14 @@
 }
 
 .registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .terms-section .header-text {
-    font: normal normal normal 20px/30px Noto Sans JP;
+    font: normal normal normal 20px/30px Noto-Regular;
     letter-spacing: 0px;
     color: #111111;
 }
 
 .registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .terms-section p {
     text-align: center;
-    font: normal normal normal 14px/21px Noto Sans JP;
+    font: normal normal normal 14px/21px Noto-Regular;
     letter-spacing: 0px;
     color: #111111;
     margin-bottom: 0;
@@ -205,36 +205,36 @@
     justify-content: center;
 }
 
-.student-login .right-side .ui.form .field.check{
+.student-form .right-side .ui.form .field.check {
     display: flex;
     width: 100%;
     justify-content: start;
 }
 
 .registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .field .ui.checkbox label:before,
-.student-login .right-side .ui.form .field .ui.checkbox label:before {
+.student-form .right-side .ui.form .field .ui.checkbox label:before {
     width: 20px;
     height: 20px;
     border: 2px solid #111111;
 }
 
 .registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .field .ui.checkbox label::after,
-.student-login .right-side .ui.form .field .ui.checkbox label::after {
+.student-form .right-side .ui.form .field .ui.checkbox label::after {
     width: 20px;
     height: 20px;
     color: #4FA53A;
 }
 
 .registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .field label,
-.student-login .right-side .ui.form .field label {
+.student-form .right-side .ui.form .field label {
     color: #111111;
     text-decoration: underline;
-    font: normal normal bold 14px/21px Noto Sans JP;
+    font: normal normal bold 14px/21px Noto-Bold;
     letter-spacing: 0px;
 }
 
 .registration-tabs .tabs-section .tabs .ui.bottom.attached.segment.active.tab .ui.form.adviser.form_4 .field label span,
-.student-login .right-side .ui.form .field label span {
+.student-form .right-side .ui.form .field label span {
     color: #0000FF;
     margin-left: 10px;
 }
@@ -268,7 +268,7 @@
     color: grey !important;
     position: absolute;
     right: 10px;
-    margin-top: 14px;
+    padding: 10px 0;
     width: 20px;
     height: 20px;
     font-size: 17px;
@@ -283,7 +283,7 @@
     content: "\f070";
 }
 
-.adviser-login {
+.adviser-form {
     padding: 0px 20px;
     display: flex;
     width: 100%;
@@ -295,26 +295,33 @@
     width: 50%;
 }
 
-.adviser-login .left-side {
+.adviser-form .left-side {
     padding-right: 20px;
     border-right: 1px solid #E1E1E1;
 }
 
-.adviser-login .right-side {
+.adviser-form .right-side {
     padding-left: 20px;
 }
 
-.adviser-login .left-side .header-text,
-.adviser-login .right-side .header-text {
+.adviser-form .left-side .header-text,
+.adviser-form .right-side .header-text {
     text-align: left;
-    font: normal normal normal 20px/30px Noto Sans JP;
+    font: normal normal normal 20px/30px Noto-Regular;
     letter-spacing: 0px;
     color: #111111;
     opacity: 1;
     margin-bottom: 30px;
 }
 
-.adviser-login .left-side .ui.form {
+.adviser-form .left-side p:nth-child(2) {
+    font: normal normal normal 14px/21px Noto-Regular;
+    letter-spacing: 0px;
+    color: #111111;
+    margin-bottom: 30px;
+}
+
+.adviser-form .left-side .ui.form {
     width: 60%;
 }
 
@@ -338,9 +345,9 @@
     margin: inherit !important;
 }
 
-.adviser-login .right-side p {
+.adviser-form .right-side p {
     text-align: left;
-    font: normal normal normal 14px/21px Noto Sans JP;
+    font: normal normal normal 14px/21px Noto-Regular;
     letter-spacing: 0px;
     color: #111111;
     opacity: 1;
@@ -352,43 +359,85 @@
     width: 176px;
 }
 
-.student-login {
+.student-form {
     padding: 0px;
     display: flex;
     width: 100%;
 }
 
-.student-login .left-side {
+.student-form .left-side {
     margin-top: -30px;
 }
 
-.student-login .left-side img {
+.student-form .left-side img {
     width: 100%;
     height: calc(100vh - 70px);
     object-fit: cover;
     border-bottom-right-radius: 10px;
 }
 
-.student-login .right-side {
+.student-form .right-side {
     padding: 0px 20px;
 }
 
-.student-login .right-side h1.header-text {
-    font: normal normal bold 40px/60px Noto Sans JP;
+.student-form .right-side h1.header-text {
+    font: normal normal bold 40px/60px Noto-Bold;
     letter-spacing: 0px;
     color: #111111;
     opacity: 1;
     margin-bottom: 40px;
 }
 
-.student-login .right-side .ui.form .field:nth-child(2){
+.student-form .right-side .ui.form .field:nth-child(2) {
     padding-bottom: 40px;
     border-bottom: 1px solid #AAAAAA;
     margin-bottom: 0;
 }
 
-.student-login .right-side .ui.form .fields-section{
+.student-form .right-side .ui.form .fields-section {
     width: 60%;
     padding-top: 40px;
-    
+
+}
+
+.student-form.password .right-side h1.header-text {
+    font: normal normal normal 20px/30px Noto-Regular;
+    letter-spacing: 0px;
+    color: #111111;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.student-form.password p {
+    font: normal normal normal 14px/21px Noto-Regular;
+    letter-spacing: 0px;
+    color: #111111;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.student-form.password .right-side .ui.form {
+    width: 60%;
+}
+
+.forgot-password {
+    text-align: center;
+}
+
+.forgot-password h1 {
+    font: normal normal normal 20px/30px Noto-Regular;
+    letter-spacing: 0px;
+    color: #111111;
+    margin-bottom: 40px;
+}
+
+.forgot-password p {
+    text-decoration: underline;
+    font: normal normal bold 14px/21px Noto-Bold;
+    letter-spacing: 0px;
+    color: #111111;
+}
+
+.main-container .ui.form.student .field .ui.selection.dropdown>.dropdown.icon{
+    padding: 14px 20px;
 }

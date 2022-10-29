@@ -1,0 +1,75 @@
+.dimmed.dimmable>.ui.animating.dimmer,
+.dimmed.dimmable>.ui.visible.dimmer,
+.ui.active.dimmer {
+    display: flex !important;
+    align-items: center;
+}
+
+.ui.active.modal {
+    text-align: center;
+    position: initial;
+    margin: auto;
+    width: 616px;
+    border-radius: 10px;
+}
+
+.ui.modal>.icon:first-child+*,
+.ui.modal>:first-child:not(.icon) {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.ui.modal>:last-child {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.ui.modal>.content {
+    padding: 30px !important;
+}
+
+.ui.modal .group-img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 15px;
+}
+
+.ui.modal .like-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.ui.modal .like-img:hover {
+    content: url(/public/images/modal-images/active-like.svg);
+}
+
+.ui.modal>.content p {
+    font: normal normal normal 14px/21px Noto-Regular;
+    letter-spacing: 0px;
+    color: #111111;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.ui.modal>.content h2 {
+    font: normal normal normal 20px/30px Noto-Regular;
+    letter-spacing: 0px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: #111111;
+}
+
+.ui.modal>.content h1 {
+    font: normal normal bold 40px/60px Noto-Bold;
+    letter-spacing: 0px;
+    color: #111111;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.ui.modal .ui.button.underline {
+    margin-top: 20px;
+    padding: 0;
+}
